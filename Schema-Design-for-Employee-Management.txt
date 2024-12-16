@@ -39,24 +39,9 @@
 +-----------+-------------+------+-----+---------+----------------+
 
 
-----> 3. Roles Table:
-      CREATE TABLE roles (
-      role_id INT AUTO_INCREMENT PRIMARY KEY,
-      role_name VARarchar(50) NOT NULL,
-      description text
-);
-
- desc roles;
-+-------------+-------------+------+-----+---------+----------------+
-| Field       | Type        | Null | Key | Default | Extra          |
-+-------------+-------------+------+-----+---------+----------------+
-| role_id     | int         | NO   | PRI | NULL    | auto_increment |
-| role_name   | varchar(50) | NO   |     | NULL    |                |
-| description | text        | YES  |     | NULL    |                |
-+-------------+-------------+------+-----+---------+----------------+
 
 
-----> 4. Attendance Table
+----> 3. Attendance Table
       CREATE TABLE attendance (
       attendance_id int AUTO_INCREMENT PRIMARY KEY,
       employee_id int,
@@ -77,7 +62,7 @@ mysql> desc attendance;
 +---------------+-------------+------+-----+---------+----------------+
 
 
-----> 5. Projects Table
+----> 4. Projects Table
       CREATE TABLE projects (
       project_id int AUTO_INCREMENT PRIMARY KEY,
       project_name VARCHAR(50) NOT NULL,
